@@ -1,27 +1,108 @@
-.spacer {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-.fa {
-    margin-left: 10px;
-}
-
-.logo {
-    height: 75px;
-}
-
-#Name {
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    padding-left: 15px;
-}
-
-#ComingSoon {
+#headerWrap {
     width: 100%;
-}
+    height: 1000px;
+    margin-top: -15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/images/LogCabin.png");
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  #headerLogo img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 300px;
+  }
+  
+  #headerWrap h2 {
+    padding-top: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  #headerWrap h6 {
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: -20px;
+    width: 100%;
+  }
+  
+  #headerLogo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    width: 33%;
+    font-size: 28px;
+  }
+  
+  #headerWrapContact h1 {
+    padding-top: 2%;
+    font-size: 80px;
+    font-style: bold;
+    /* font-family: "Dancing Script"; */
+    letter-spacing: 1%;
+  }
+  
+  #headerWrapContactText h2 {
+    font-size: 31px;
+    margin-top: -15px;
+    font-family: "Dancing Script";
+  }
+  
+  #headerWrapContactText {
+    padding-bottom: 20px;
+  }
+  
+  #headerWrapContactForm {
+    display: inline-block;
+    position: relative;
+    padding: 32px 30px 31px;
+    /* margin-top: 32px; */
+    background: #FFF;
+    max-width: 470px;
+    width: 100%;
+    border-radius: 2px;
+    border-width: .5;
+    border: solid;
+    margin-top: 25px;
+  }
 
-.products {
-    padding-bottom: 10px;
-}
+  #headerWrapContactForm span {
+      color: black;
+      font-style: bold;
+      font-size: 25px;
+  }
+  
+  #headerWrapContactForm .inputFields {
+    width: 85%;
+    height: 55px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #c4c2c2;
+    padding-left: 15px;
+  }
+  
+  #headerWrapContactForm #name {
+    margin-top: 15px;
+  }
+  
+  #headerWrapContactForm #submit {
+    color: white;
+    background-color: #2fe6ce;
+    font-size: 25px;
+    font-family: arial;
+    border: solid;
+    border-collapse: collapse;
+    height: 65px;
+  }
+  
+  #headerWrapContactForm #submit:hover {
+    color: white;
+    background-color: #22c6b0;
+    font-size: 25px;
+    font-family: arial;
+  }
