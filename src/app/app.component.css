@@ -34,7 +34,7 @@
   #headerLogo {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3%;
+    padding-top: 5%;
     width: 33%;
     font-size: 28px;
   }
@@ -48,8 +48,8 @@
   }
   
   #headerWrapContactText h2 {
-    font-size: 31px;
-    margin-top: -15px;
+    font-size: 55px;
+    margin-top: 35px;
     font-family: "Dancing Script";
   }
   
@@ -60,7 +60,7 @@
   #headerWrapContactForm {
     display: inline-block;
     position: relative;
-    padding: 32px 30px 31px;
+    padding: 25px 30px 31px;
     /* margin-top: 32px; */
     background: #FFF;
     max-width: 470px;
