@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "dalesnatureshack",
-    "staging": "dalesnatureshack"
+    "staging": "dalesnatureshack",
+    "prod": "dalesnatureshack"
   }
 }
