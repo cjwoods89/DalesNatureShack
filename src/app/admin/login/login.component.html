@@ -19,7 +19,7 @@
       <label>Password
         <input type="password" placeholder="Enter Password" id="password1"
           [(ngModel)]="password1" name="password1" required #pwd1="ngModel">
-          <div [hidden]="pwd1.valid ||pwd1em.pristine" class="alert callout">
+          <div [hidden]="pwd1.valid ||pwd1.pristine" class="alert callout">
               Password is required
           </div>
       </label>
