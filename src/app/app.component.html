@@ -17,15 +17,13 @@
 
       <div id="headerWrapContactForm">
         <span>Get notified when we launch!</span>
-        <form>
-          <input type="text" class="inputFields" id="name" value="NAME" />
-          <input type="text" class="inputFields" id="eMail" value="E-MAIL" />
-          <input type="text" class="inputFields" id="phone" value="PHONE" />
-          <!-- <input type="submit" class="inputFields" id="submit" value="NOTIFY ME!" /> -->
+        
+        <form action="mailto:cjwoods89@gmail.com" method="post" enctype="text/plain">
+          <input type="text" class="inputFields" id="name" placeholder="NAME" />
+          <input type="text" class="inputFields" id="eMail" placeholder="E-MAIL" />
+          <input type="text" class="inputFields" id="comment" placeholder="COMMENT" />
+          <input type="submit" class="inputFields" id="submit" value="NOTIFY ME!" />
         </form>
-        <button class="btn btn-primary" data-toggle="modal" href="#myModal">
-          NOTIFY ME!!
-        </button>
 
       </div>
 
@@ -35,7 +33,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal hide" id="myModal"><!-- note the use of "hide" class -->
+<!-- <div class="modal hide" id="myModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -48,9 +46,8 @@
         <img src="https://media.giphy.com/media/l4FGmO3MZkGng9Bp6/giphy.gif" width="480" height="342" />
       </div>
       <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>​
+</div>​ -->
