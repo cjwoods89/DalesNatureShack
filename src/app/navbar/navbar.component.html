@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">
+      <img class="rounded-circle icon" src="../assets/images/Rough_Logo_1_no_circle.png" />
+      Dale's Nature Shack</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="/products">Candles</a></li>
+          <a class="dropdown-item disabled">Bath Bombs</a>
+        </div>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/aboutUs">About Us</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/admin">Admin Area</a>
+      </li>
+    </ul>
+  </div>
+</nav>
