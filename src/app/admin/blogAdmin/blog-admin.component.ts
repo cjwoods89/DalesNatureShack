@@ -24,6 +24,7 @@ export class BlogAdminComponent implements OnInit {
     logout() {
         this.userSVC.logout();
         this.router.navigate(['']);
+        localStorage.clear();
     }
 
     chooseMode(mode: string) {

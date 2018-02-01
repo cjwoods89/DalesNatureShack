@@ -19,6 +19,7 @@ export class AdminMenuComponent implements OnInit {
   logout() {
     this.userSVC.logout();
     this.router.navigate(['']);
+    localStorage.clear();
   }
 
 }
