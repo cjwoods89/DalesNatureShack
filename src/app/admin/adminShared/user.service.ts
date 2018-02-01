@@ -12,6 +12,7 @@ export class UserService implements CanActivate {
     userLoggedIn: boolean = false;
     loggedInUser: string;
     authUser: any;
+    loggedIn: boolean = false;
 
     constructor( private router: Router) {
 
@@ -50,15 +51,15 @@ export class UserService implements CanActivate {
 
     verifyUser() {
         this.authUser = firebase.auth().currentUser;
-        console.log(this.authUser);
+        //console.log(this.authUser);
 
         if (this.authUser) {
 
             alert(`Welcome ${this.authUser.email}`);
             this.loggedInUser = this.authUser.email;
             this.userLoggedIn = true;
-            this.router.navigate(['/home']);
-
+            this.router.navigate(['/admin']);
+            localStorage.setItem('User', this.authUser.email);
         }
     }
 
@@ -77,6 +78,11 @@ export class UserService implements CanActivate {
         }, function(error) {
             alert(`${error.message} Unable to logout. Try again!`);
         });
+    }
+
+
+    getLoggedInStatus() {
+        return this.loggedIn;
     }
 
 }
