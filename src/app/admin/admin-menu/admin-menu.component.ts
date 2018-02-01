@@ -16,7 +16,7 @@ export class AdminMenuComponent implements OnInit {
     this.theUser = this.userSVC.loggedInUser;
   }
 
-  logout(){
+  logout() {
     this.userSVC.logout();
     this.router.navigate(['']);
   }

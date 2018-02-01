@@ -9,12 +9,17 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 import { UserService } from './adminShared/user.service';
+import { BlogAdminService } from './adminShared/blog-admin.service';
+
+import { BlogAdminComponent } from './blogAdmin/blog-admin.component';
+import { BlogAddComponent } from './blogAdd/blog-add.component';
 
 const AdminRoutes: Routes = [
     {
         path: 'admin',
         component: AdminComponent,
         children: [
+            { path: 'blog-admin', component: BlogAdminComponent, canActivate: [UserService] },
             { path: 'login', component: LoginComponent },
             { path: 'signup', component: SignUpComponent },
             { path: '', component: AdminMenuComponent, canActivate: [UserService] }
@@ -35,9 +40,12 @@ const AdminRoutes: Routes = [
         AdminMenuComponent,
         LoginComponent,
         SignUpComponent,
+        BlogAdminComponent,
+        BlogAddComponent
     ],
     providers: [
         UserService,
+        BlogAdminService
     ]
 })
 export class AdminModule {}
